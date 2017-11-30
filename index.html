@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Brad's Click Counter</title>
+		<style>
+			body {
+				background-color: turquoise;
+			}
+			.customButton {
+				width: 100px;
+				background-color: white;
+				text-align: center;
+				padding: 10px;
+				border-radius: 20px;
+				border: 2px black solid;
+				cursor: pointer;
+				user-select: none;
+				font-size: 20px;
+				font-weight: bold;
+				color: orange;
+			}
+		</style>
+	</head>
+	<body>
+        <h1>Click Counters</h1>
+        <p>0 points :) Yeah!!! Click This</p>
+        <div class="customButton" onclick="clickFunction(1)">+1</div>
+        <div class="customButton" onclick="clickFunction(-1)">-1</div>
+        <script>
+        	var points = 0;
+        	function clickFunction(amount) {
+        		if (points + amount < 0) {
+        			amount = 0;
+        		}
+        		points = points + amount;
+        		document.querySelector("p").textContent = points + " points SoMuch Points :)";
+
+        	}
+        </script>
+	</body>
+</html>
