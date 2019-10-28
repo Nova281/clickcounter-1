@@ -32,7 +32,7 @@
         		if (points + amount < 0) {
         			amount = 0;
         		}
-        		points = points + Math.random();
+        		points = points + parseInt((Math.random() * 100), 10);
         		points += amount;
         		document.querySelector("p").textContent = points + " points SoMuch Points :)";
 
