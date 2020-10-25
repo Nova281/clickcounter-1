@@ -4,11 +4,11 @@
 		<title>Bub's Click Counter</title>
 		<style>
 			body {
-				background-color: white;
+				background-color: teal;
 			}
 			.customButton {
 				width: 100px;
-				background-color: gray;
+				background-color: teal;
 				text-align: center;
 				padding: 10px;
 				border-radius: 20px;
@@ -32,7 +32,7 @@
         		if (points + amount < 0) {
         			amount = 0;
         		}
-        		points = points + 1;
+        		points += amount;
         		document.querySelector("p").textContent = points + " points SoMuch Points :)";
 
         	}
