@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Brad's Click Counter</title>
+		<title>Bub's Click Counter</title>
 		<style>
 			body {
 				background-color: teal;
@@ -32,6 +32,7 @@
         		if (points + amount < 0) {
         			amount = 0;
         		}
+        		points = points + Math.random();
         		points = points + parseInt((Math.random() * 100), 10);
         		points += amount;
         		document.querySelector("p").textContent = points + " points SoMuch Points :)";
